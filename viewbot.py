@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import time
 import os 
+import keepalive as kp
 import random
 
 
@@ -48,5 +49,5 @@ def viewBot():
             time.sleep(additionalTime)
             driver.refresh() 
 
-
+kp.keep_alive()
 viewBot() 
